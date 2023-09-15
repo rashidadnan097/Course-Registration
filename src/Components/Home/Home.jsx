@@ -16,7 +16,13 @@ const Home = () => {
     },[])
 
     const handleAllSelector = (actor) =>{
-       setSelectedAllActors([...selectedAllActors,actor]);
+        const isExist = selectedAllActors.find((item) => item.title==actor.title);
+        if(isExist){
+            alert("Already Selected");
+        }else{
+            setSelectedAllActors([...selectedAllActors,actor]);
+        }
+ 
     };
     console.log(selectedAllActors);
 

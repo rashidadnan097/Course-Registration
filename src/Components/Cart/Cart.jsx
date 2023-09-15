@@ -13,11 +13,11 @@ const Cart = ({selectedAllActors}) => {
             <hr />
             {
                 selectedAllActors.map((actor) => (
-                    <li>{actor.title}</li>
+                    <li key={actor.id}>{actor.title}</li>
                 ))
             }
             <hr />
-            <h3 className='total'>Total credit hours: {selectedAllActors.length}</h3>
+            <h3 className='total'>Total credit hours: {selectedAllActors.credit}</h3>
         </div>
     );
 };
