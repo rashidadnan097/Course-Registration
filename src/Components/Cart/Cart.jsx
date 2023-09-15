@@ -8,13 +8,16 @@ const Cart = ({selectedAllActors}) => {
     console.log(selectedAllActors);
 
     return (
-        <div>
-            <h4>this is course registration</h4>
+        <div className='cart-container'>
+            <h3 className='remain'>Credit Hour Remaining </h3>
+            <hr />
             {
                 selectedAllActors.map((actor) => (
-                    <li>h</li>
+                    <li>{actor.title}</li>
                 ))
             }
+            <hr />
+            <h3 className='total'>Total credit hours: {selectedAllActors.length}</h3>
         </div>
     );
 };

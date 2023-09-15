@@ -1,3 +1,13 @@
-.container{
-    color: green;
+.cart-container{
+    color: gray;
+    text-align: start;
+    line-height: 1.7;
+}
+.remain{
+    text-align: start;
+    color: rgb(100, 100, 243);
+}
+.total{
+    text-align: start;
+    color: gray;
 }

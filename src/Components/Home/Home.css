@@ -16,6 +16,7 @@ body{
     padding-bottom: 0px;
 }
 .info{
+    color: gray;
     display: flex;
     justify-content: space-evenly;
 }
@@ -44,4 +45,11 @@ h4{
     text-align: start;
     padding: 0px 10px 0px 8px;
     line-height: 0.5;
+}
+.cart{
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 500px;
+    background-color: white;
+    padding: 10px 10px 10px 20px;
 }
