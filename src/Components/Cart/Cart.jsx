@@ -14,7 +14,8 @@ const Cart = ({selectedAllActors, totalCredit, totalRemaining}) => {
             <h2>Course Name</h2>
             {
                 selectedAllActors.map((actor) => (
-                    <li key={actor.id}>{actor.title}</li>
+                    <ol type='1'><li key={actor.id}>{actor.title}</li></ol>
+                   
                 ))
             }
             <hr />
