@@ -8,6 +8,8 @@ const Home = () => {
 
     const [allActors,setAllActors] = useState([]);
     const [selectedAllActors, setSelectedAllActors] = useState([]);
+    const [totalCredit,setTotalCredit] = useState(0);
+    const [totalRemaining,setRemaining] = useState(0);
 
     useEffect(() => {
         fetch("./data.json")
@@ -17,10 +19,25 @@ const Home = () => {
 
     const handleAllSelector = (actor) =>{
         const isExist = selectedAllActors.find((item) => item.title==actor.title);
+
+        let count = actor.credit;
+
         if(isExist){
-            alert("Already Selected");
+           return alert("Already Selected This Course");
         }else{
-            setSelectedAllActors([...selectedAllActors,actor]);
+            selectedAllActors.forEach((item) => {
+                count = count + item.credit
+            });
+            const totalRemaining = 20 - count;
+           
+            if(count > 20){
+                return alert("Sorry your course unavailable");
+            }else{
+                setTotalCredit(count);
+                setRemaining(totalRemaining);
+              setSelectedAllActors([...selectedAllActors,actor]);  
+            }
+             
         }
  
     };
@@ -54,7 +71,8 @@ const Home = () => {
 
             </div>
              <div className="cart">
-                <Cart selectedAllActors={selectedAllActors}></Cart>
+                <Cart selectedAllActors={selectedAllActors} totalCredit={totalCredit}
+                totalRemaining={totalRemaining}></Cart>
              </div>
           </div>
             
