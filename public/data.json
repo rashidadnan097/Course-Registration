@@ -3,7 +3,7 @@
       "image": "https://miro.medium.com/v2/resize:fit:705/0*bEonUGnx4V0nL1eJ.jpg",
       "title": "Introduction to Programming",
       "description": "Learn the basics of programming with this introductory course.",
-      "credit": 6,
+      "credit": 3,
       "price": 2500
     },
     {
@@ -17,28 +17,28 @@
       "image": "https://i.ytimg.com/vi/zg9ih6SVACc/maxresdefault.jpg",
       "title": "Data Structures and Algorithms",
       "description": "Explore advanced data structures and algorithms in this course.",
-      "credit": 4,
+      "credit": 2,
       "price": 1500
     },
     {
        "image": "https://static.vecteezy.com/system/resources/previews/019/547/678/original/trendy-db-management-vector.jpg",
        "title": "Database Management Systems",
        "description": "Learn the principles of database management in this course.",
-       "credit": 3,
+       "credit": 5,
        "price": 1200
     },
     {
       "image": "https://img.freepik.com/free-vector/abstract-wireframe-digital-human-female-face-streaming-matrix-digital-binary-code-background-ai-artificial-intelligence-concept_127544-849.jpg",
       "title": "Artificial Intelligence",
       "description": "Dive into the world of artificial intelligence and machine learning.",
-      "credit": 4,
+      "credit": 2,
       "price": 1500
     },
     {
       "image": "https://media.istockphoto.com/id/1356364287/photo/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-backlit-keyboard-screens-show.jpg?s=612x612&w=0&k=20&c=ijjq-DLNxIaPuGvIX8k06IZxMAjGpyJeboaV_byCX9k=",
       "title": "Software Engineering Principles",
       "description": "Master software engineering principles and practices.",
-      "credit": 4,
+      "credit": 3,
       "price": 2000
     },
     {
@@ -59,7 +59,7 @@
       "image": "https://t4.ftcdn.net/jpg/02/05/93/21/360_F_205932110_IWiDmketVT703mNPZ8eSn76Sa25QoSYw.jpg",
       "title": "Ethical Hacking",
       "description": "Become an ethical hacker and protect digital systems.",
-      "credit": 7,
+      "credit": 3,
       "price": 1800
     }
   ]

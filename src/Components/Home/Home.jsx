@@ -33,7 +33,7 @@ const Home = () => {
             const totalRemaining = 20 - count;
            
             if(count > 20){
-                return toast("Sorry your course unavailable");
+                return toast("No more then 20 credits");
             }else{
                 setTotalCredit(count);
                 setRemaining(totalRemaining);
